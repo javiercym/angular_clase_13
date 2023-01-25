@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./ejercicio2.component.css']
 })
 export class Ejercicio2Component {
+  texto = 0;
+  tipoCambio!: string;
 
+  onChange(value: string) {
+    this.tipoCambio = value;
+}
 }

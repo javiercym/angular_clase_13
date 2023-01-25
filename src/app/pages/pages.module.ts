@@ -6,12 +6,14 @@ import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { CambioMonedaPipe } from '../pipes/cambio-moneda.pipe';
 
 @NgModule({
   declarations: [
     Ejercicio1Component,
     Ejercicio2Component,
-    PagesComponent
+    PagesComponent,
+    CambioMonedaPipe
   ],
   imports: [
     CommonModule,

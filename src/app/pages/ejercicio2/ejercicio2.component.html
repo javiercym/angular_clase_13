@@ -1,1 +1,19 @@
-<p>ejercicio2 works!</p>
+<div class="container">
+    <h3>CURRENCY PIPES</h3>
+    <span>Valor:  </span>
+    <input [(ngModel)]="texto" type="number" name="texto" placeholder="Ingresa su moneda" min="1">
+    <div class="form-group"><br>
+      <label for="">Tipo Cambio</label>
+      
+      <select #select class="form-control" (change)="onChange(select.value)">
+
+        <option value="1">USD</option>
+        <option value="2">EUR</option>
+      </select>
+
+
+      {{tipoCambio}}
+    </div>
+    <br>
+    <p>Resultado: <span>{{texto | cambioMoneda:tipoCambio }}</span></p>
+</div>
